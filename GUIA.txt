@@ -1,0 +1,35 @@
+En este proyecto aplicarás Spring Data JPA para una aplicación web de informes de métricas olímpicas llamada Gold Medal Metrics.
+
+Gold Medal Metrics permite a los usuarios:
+
+- Ver una lista de países con su población, PIB y número de medallas de oro olímpicas.
+- Ordenar la lista de países por cualquiera de estos atributos, así como alfabéticamente por nombre.
+- Ver una descripción detallada de un país, con estadísticas sobre sus victorias olímpicas.
+- Ver una lista de todas las victorias olímpicas de un país con el año, la temporada, el nombre del ganador, la ciudad y el evento.
+- Ordenar la lista de victorias olímpicas por cualquiera de estos atributos.
+
+En este proyecto, te centrarás principalmente en aplicar el soporte de repositorios de Spring Data JPA, incluyendo consultas personalizadas. Después, actualizarás la lógica existente en la clase Spring @RestController para que use esos métodos del repositorio.
+
+Para comenzar, descarga el START.rar.Ten en cuenta que no compilará ni se ejecutará inmediatamente, ya que el proyecto incluye varios `TODO` que tendrás que implementar. Después de descargar el archivo ZIP, haz doble clic sobre él para descomprimirlo y acceder al contenido del proyecto.
+
+Una vez descargado el proyecto, abre la carpeta raíz en el IDE que prefieras. En la guía que te proporcionare de mi repositorio NOTION, utilizaremos en todo momento Visual Studio Code.
+
+REPOSITORIO NOTION: https://www.notion.so/protonacademy/Laboratorio-de-JPA-de-Spring-M-tricas-de-Medalla-de-Oro-3570ab12b36b807bb965e8cb6dd7b9da?source=copy_link
+
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+## Detalles de implementación
+
+Para completar este proyecto, tendrás que definir los repositorios necesarios y actualizar la lógica de la clase `GoldMedalController` para que consuma esos métodos. Para saber qué repositorios debes crear, consulta las clases de entidad que se encuentran en `src/main/java/com/codecademy/goldmedal/model`:
+
+- `Country`
+- `GoldMedal`
+
+Para identificar los métodos que debes añadir en cada interfaz de repositorio, abre la clase `GoldMedalController` y busca los comentarios precedidos por `TODO`, por ejemplo:
+
+`medalsList = // TODO: list of medals sorted by year in the given order`
+
+## Pruebas
+
+Se recomienda probar manualmente todas las rutas usando `curl`. Si quieres ver un conjunto de solicitudes de ejemplo y sus respuestas esperadas, revisa el archivo `README.md`.
